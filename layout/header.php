@@ -54,7 +54,9 @@
             line-height: 43px;
             border-radius: 6px;
         }
-
+        .header-bottom-content.style-two .top-navigation .menu-list > li > a {
+            padding: 10px 20px;
+        }
         .main-slider.style1 .content .btns-box a.btn-one{
             padding: 5px 10px !important;
             border-radius: 6px;

@@ -24,8 +24,7 @@
                                     </ul>
                                 </li>
                                 <li class="<?= page_active('logements') ;?>"><a href="<?=$domaine?>/logements">Logements</a></li>
-                                <li class="<?= page_active('locataire') ;?>"><a href="<?=$app_domaine?>/connexion" target="_blank">Locataires</a></li>
-                                <li class="<?= page_active('propriétaires') ;?>"><a href="<?=$app_domaine?>/connexion" target="_blank">Propriétaires</a></li>
+                                <li class="<?= page_active('locataire') ;?>"><a href="<?=$app_domaine?>/inscription" >Inscription</a></li>
                                 <li class="<?= page_active('contacts') ;?>"><a href="<?=$domaine?>/contacts">Contact</a></li>
                             </ul>
                         </div>
@@ -38,9 +37,9 @@
                 <div class="space-box1"></div>
                 <div class="header-right_buttom">
                     <div class="btns-box">
-                        <a class="btn-one" href="<?=$app_domaine?>/inscription" target="_blank">
+                        <a class="btn-one" href="<?=$app_domaine?>/connexion">
                             <i class="fa fa-angle-right" aria-hidden="true"></i>
-                            <span class="txt">S'inscrire</span>
+                            <span class="txt">Espace client</span>
                         </a>
                     </div>
                 </div>
