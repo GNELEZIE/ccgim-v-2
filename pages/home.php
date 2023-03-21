@@ -87,7 +87,7 @@ include_once $layout.'/header.php'
                         <div class="title-holder">
                             <div class="pattern-bg" style="background-image: url(<?=$cdn_domaine?>/media/thm-pattern-1.png);"></div>
                             <div class="inner-text">
-                                    <h3><a href="<?=$domaine?>/techniciens">Louer un techniciens</a></h3>
+                                    <h3><a href="<?=$domaine?>/techniciens">Louer un technicien</a></h3>
                                 <div class="text">
                                     <p>Architecte, géomètre, topographe, dessinateur, maçon, plombier, électricien...</p>
                                 </div>

@@ -90,7 +90,7 @@ class Logement{
     }
     public function getAllLogements($debut, $fin){
         $query = "SELECT * FROM logement
-        WHERE statut != 1 ORDER BY id_logement DESC LIMIT $debut, $fin";
+        WHERE pub = 1 ORDER BY id_logement DESC LIMIT $debut, $fin";
         $rs = $this->bdd->query($query);
         return $rs;
     }
@@ -158,7 +158,7 @@ class Logement{
     }
     public function getNblogements(){
         $query = "SELECT COUNT(*) as nb FROM logement
-          WHERE statut != 1";
+          WHERE pub = 1";
         $rs = $this->bdd->query($query);
         return $rs;
     }

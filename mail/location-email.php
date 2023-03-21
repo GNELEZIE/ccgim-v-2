@@ -206,7 +206,7 @@ $message = '
                                         <h5>Nom et prénom : '.$nom.' ,</h5>
                                         <h5>Téléphone  : '.$numb.' ,</h5>
                                         <h5>Email  : '.$email.' ,</h5>
-                                        <h5>Message : '.$mess.' ,</h5>
+                                        <h5>Message : '.$text.' ,</h5>
                                         <hr>
                                     </td>
                                 </tr>

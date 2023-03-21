@@ -90,3 +90,25 @@ if(!function_exists('sendMailToMe')){
     }
 }
 
+
+if(!function_exists('sendMailToMes')){
+    function sendMailToMes($from,$subject,$message){
+        $mail = new PHPMailer(true);
+        try {
+            $mail->CharSet = 'UTF-8';
+            $mail->SMTPDebug = 0;
+            $mail->setFrom($from);
+            $mail->addReplyTo($from);
+            $mail->addAddress('gerant@cabinet-ccgim.com', 'CCGIM');
+
+            $mail->isHTML(true);
+            $mail->Subject = $subject;
+            $mail->Body    = $message;
+
+            $mail->send();
+            return 'send';
+        } catch (Exception $e) {
+            return $mail->ErrorInfo;
+        }
+    }
+}
