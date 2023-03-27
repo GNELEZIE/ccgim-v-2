@@ -37,7 +37,7 @@ include_once $layout.'/header.php'
                             <div class="top">
                                 <h3>Notre siège</h3>
                             </div>
-                            <p>Abidjan, Yopougon Ananeraie</p>
+                            <p>Abidjan – YOPOUGON attié 9 <sup>ième</sup> tranche (Toit Rouge OFFOUMOU YAPO)</p>
                         </div>
                     </div>
                 </div>
@@ -53,8 +53,8 @@ include_once $layout.'/header.php'
                             <div class="top">
                                 <h3>Téléphone</h3>
                             </div>
-                            <p class="text1"><a href="tel:002250707856528"> +225 07 07 85 65 28</a> <br>
-                            </p>
+                            <p class="text1"><a href="tel:002252723469365"> 27 23 46 93 65 / +225 07 07 85 65 28</a> <br></p>
+                            <p class="text1"><a href="tel:002250103325924"> +225 01 03 32 59 24 / +225 05 04 92 79 51</a> <br></p>
                         </div>
                     </div>
                 </div>
@@ -69,7 +69,7 @@ include_once $layout.'/header.php'
                             <div class="top">
                                 <h3> Email</h3>
                             </div>
-                            <p class="text1"><a href="mailto:support@ccigim.com">support@ccigim.com</a> <br>
+                            <p class="text1"><a href="mailto:support@ccigim.com">support@cabinet-ccgim.com</a> <br>
                             </p>
                         </div>
                     </div>

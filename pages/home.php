@@ -29,20 +29,20 @@ include_once $layout.'/header.php'
                             <img src="<?=$cdn_domaine?>/media/vm01.jpg" alt="">
                         </div>
                         <div class="title-holder">
-                            <a href="<?=$domaine?>/vente-logement">
+                            <a href="<?=$domaine?>/ccgim-immobilier">
                             <div class="pattern-bg" style="background-image: url(<?=$cdn_domaine?>/media/thm-pattern-1.png);">
 
                             </div>
                             </a>
                             <div class="inner-text">
-                                <h3> <a href="<?=$domaine?>/vente-logement">Vente de maison </a></h3>
+                                <h3> <a href="<?=$domaine?>/ccgim-monetique">CCGIM IMMOBILIER </a></h3>
                                 <div class="text">
                                     <p>Nous sommes une entreprise spécialisée dans la vente de maisons </p>
                                 </div>
                             </div>
 
                             <div class="button-box">
-                                <a href="<?=$domaine?>/vente-logement">En savoir plus</a>
+                                <a href="<?=$domaine?>/ccgim-immobilier">En savoir plus</a>
                             </div>
                             <div class="icon">
                                 <span class="flaticon-roof"></span>
@@ -62,13 +62,13 @@ include_once $layout.'/header.php'
                             <div class="pattern-bg"
                                  style="background-image: url(<?=$cdn_domaine?>/media/thm-pattern-1.png);"></div>
                             <div class="inner-text">
-                                <h3><a href="<?=$domaine?>/louer-logement">Louer une maison</a></h3>
+                                <h3><a href="<?=$domaine?>/formations">FORMATIONS</a></h3>
                                 <div class="text">
-                                    <p>Vous cherchez une maison ou un appartement à Abidjan ou l’intérieur du pays pour une location de longue ou courte durée ?</p>
+                                    <p>Stages de préparation pour la validation de BTS</p>
                                 </div>
                             </div>
                             <div class="button-box">
-                                <a href="<?=$domaine?>/louer-logement">En savoir plus</a>
+                                <a href="<?=$domaine?>/ccgim-bureautique">En savoir plus</a>
                             </div>
                             <div class="icon">
                                 <span class="flaticon-roof-1"></span>
@@ -87,13 +87,13 @@ include_once $layout.'/header.php'
                         <div class="title-holder">
                             <div class="pattern-bg" style="background-image: url(<?=$cdn_domaine?>/media/thm-pattern-1.png);"></div>
                             <div class="inner-text">
-                                    <h3><a href="<?=$domaine?>/techniciens">Louer un technicien</a></h3>
+                                    <h3><a href="<?=$domaine?>/ccgim-divers">CCGIM DIVERS</a></h3>
                                 <div class="text">
                                     <p>Architecte, géomètre, topographe, dessinateur, maçon, plombier, électricien...</p>
                                 </div>
                             </div>
                             <div class="button-box">
-                                <a href="<?=$domaine?>/techniciens">En savoir plus</a>
+                                <a href="<?=$domaine?>/ccgim-divers">En savoir plus</a>
                             </div>
                             <div class="icon">
                                 <span class="flaticon-roof-2"></span>

@@ -174,7 +174,7 @@ include_once $layout.'/header.php'
 
                         <div class="overlay-box">
                             <h2>10<span class="flaticon-plus-1"></span></h2>
-                            <h3>Anneé<br> d'expérience</h3>
+                            <h3>Anneés<br> d'expérience</h3>
                         </div>
 
                         <div class="icon-box">

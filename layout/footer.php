@@ -65,7 +65,7 @@
                             <ul>
                                 <li>
                                     <p>Téléphone : <a href="tel:002250707856528">+225 07 07 85 65 28</a></p>
-                                    <p>Email: <a href="support@ccigim.com">support@ccigim.com</a></p>
+                                    <p>Email: <a href="support@cabinet-ccgim.com">support@cabinet-ccgim.com</a></p>
                                 </li>
                             </ul>
                             <div class="footer-social-link">

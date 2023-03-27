@@ -11,7 +11,7 @@ include_once $layout.'/header.php'
                 <div class="col-xl-12">
                     <div class="inner-content">
                         <div class="title" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
-                            <h2>Louer un Technicien</h2>
+                            <h2>CCGIM bureautique</h2>
                         </div>
                     </div>
                 </div>
@@ -34,21 +34,35 @@ include_once $layout.'/header.php'
 
                             <ul class="service-pages">
                                 <li>
-                                    <a href="<?=$domaine?>/vente-logement">
-                                        Vente et achat de maison<i class="fa fa-angle-right" aria-hidden="true"></i>
+                                    <a href="<?=$domaine?>/ccgim-immobilier">
+                                        CCGIM IMMOBILIER<i class="fa fa-angle-right" aria-hidden="true"></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="<?=$domaine?>/louer-logement">
-                                        Louer une maison <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                    <a href="<?=$domaine?>/ccgim-bureautique">
+                                        CCGIM BUREAUTIQUE<i class="fa fa-angle-right" aria-hidden="true"></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="<?=$domaine?>/techniciens">
-                                        Louer un technicien <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                    <a href="<?=$domaine?>/ccgim-monetique">
+                                        CCGIM MONETIQUE <i class="fa fa-angle-right" aria-hidden="true"></i>
                                     </a>
                                 </li>
-
+                                <li>
+                                    <a href="<?=$domaine?>/ccgim-wifi">
+                                        CCGIM WIFI <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="<?=$domaine?>/formations">
+                                        LA FORMATION<i class="fa fa-angle-right" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="<?=$domaine?>/ccgim-divers">
+                                        CCGIM DIVERS<i class="fa fa-angle-right" aria-hidden="true"></i>
+                                    </a>
+                                </li>
                             </ul>
                         </div>
 
@@ -59,7 +73,7 @@ include_once $layout.'/header.php'
                                 </div>
                                 <div class="overlay-title">
                                     <div class="border-left-box"></div>
-                                    <h3>Louer une maison</h3>
+                                    <h3>CCGIM bureautique</h3>
                                 </div>
                                 <div class="round-box">
                                     <h6><span>100%</span> <br> Qualité</h6>
@@ -92,21 +106,14 @@ include_once $layout.'/header.php'
                     <div class="service-details-content">
 
                         <div class="top">
-                            <h2>Nos Techniciens : Comment les contacter</h2>
+
                             <div class="img-box">
-                                <img src="<?=$cdn_domaine?>/media/tch.jpg" alt="">
+                                <img src="<?=$cdn_domaine?>/media/bureautique.jpg" alt="">
                             </div>
                         </div>
 
                         <div class="service-details-text-box1">
-                            <h5>•	Répertoire : Tout technicien en bâtiment</h5>
-                           <p>
-                               Géomètre, topographe, Architect, maçon, plombier, peintre, peintre décorateur, carreleur, staffeur, électricien, menuisier, étanchéiste…
-                           </p>
-                            <h5>•  Répertoire : Tout vendeur de matériaux de construction</h5>
-                            <p>Ciment, sable, gravier…</p>
-                            <h5>•	Répertoire : Toute location de matériels de construction</h5>
-                            <p>Bois, Bambou, bétonnière, bennes, chariots, engins et machines BTP</p>
+
                         </div>
 
                     </div>

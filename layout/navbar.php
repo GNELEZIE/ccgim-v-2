@@ -16,11 +16,19 @@
                             <ul class="navigation clearfix">
                                 <li class="<?= page_active('') ;?>"><a href="<?=$domaine?>">Accueil</a></li>
                                 <li class="<?= page_active('a-propos') ;?>"><a href="<?=$domaine?>/a-propos">A propos</a></li>
-                                <li class="dropdown <?= page_active('vente-logement') ;?> <?= page_active('louer-logement') ;?> <?= page_active('techniciens') ;?>"><a href="#">Services</a>
+                                <li class="dropdown <?= page_active('ccgim-immobilier') ;?> <?= page_active('ccgim-monetique') ;?>
+                                <?= page_active('techniciens') ;?>
+                                <?= page_active('formations') ;?>
+                                <?= page_active('ccgim-divers') ;?>
+                                <?= page_active('ccgim-bureautique') ;?>
+                                "><a href="#">Services</a>
                                     <ul>
-                                        <li class="<?= page_active('vente-logement') ;?>"><a href="<?=$domaine?>/vente-logement">Vente et Achat un logement</a></li>
-                                        <li class="<?= page_active('louer-logement') ;?>"><a href="<?=$domaine?>/louer-logement">Louer un logement</a></li>
-                                        <li class="<?= page_active('techniciens') ;?>"><a href="<?=$domaine?>/techniciens">Louer un techniciens</a></li>
+                                        <li class="<?= page_active('ccgim-immobilier') ;?>"><a href="<?=$domaine?>/ccgim-immobilier">CCGIM IMMOBILIER</a></li>
+                                        <li class="<?= page_active('ccgim-bureautique') ;?>"><a href="<?=$domaine?>/ccgim-bureautique">CCGIM BUREAUTIQUE</a></li>
+                                        <li class="<?= page_active('ccgim-monetique') ;?>"><a href="<?=$domaine?>/ccgim-monetique">CCGIM MONETIQUE</a></li>
+                                        <li class="<?= page_active('ccgim-wifi') ;?>"><a href="<?=$domaine?>/ccgim-wifi">CCGIM WIFI</a></li>
+                                        <li class="<?= page_active('formations') ;?>"><a href="<?=$domaine?>/formations">LA FORMATION</a></li>
+                                        <li class="<?= page_active('ccgim-divers') ;?>"><a href="<?=$domaine?>/ccgim-divers">CCGIM DIVERS</a></li>
                                     </ul>
                                 </li>
                                 <li class="<?= page_active('logements') ;?>"><a href="<?=$domaine?>/logements">Logements</a></li>

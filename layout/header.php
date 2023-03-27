@@ -76,6 +76,9 @@
     box-shadow: rgb(0 0 0 / 24%) 0 3px 8px;
     border: 7px solid #18a3f4;
 }
+.p-0{
+    padding: 0 !important;
+}
 a {
     color: var(--thm-base);
 }
@@ -367,7 +370,7 @@ figcaption{
                                                 <span class="flaticon-email-1"></span>
                                             </div>
                                             <div class="text">
-                                                <h6><a href="mailto:support@ccigim.com">support@ccigim.com</a></h6>
+                                                <h6><a href="mailto:support@cabinet-ccgim.com">support@cabinet-ccgim.com</a></h6>
                                             </div>
                                         </li>
                                     </ul>
