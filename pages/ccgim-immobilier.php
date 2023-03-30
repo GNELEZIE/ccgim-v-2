@@ -114,19 +114,95 @@ include_once $layout.'/header.php'
 
                         <div class="service-details-text-box1">
                             <h6 class="py-1">• Conseil : Conseille tout projet d’investissement dans l’immobilier</h6>
+                            <h6 class="py-2">Nos Techniciens : Comment les contacter</h6>
+                            <h6>•	Répertoire : Tout technicien en bâtiment</h6>
+                            <p>
+                                Géomètre, topographe, Architect, maçon, plombier, peintre, peintre décorateur, carreleur, staffeur, électricien, menuisier, étanchéiste…
+                            </p>
+                            <h6>•  Répertoire : Tout vendeur de matériaux de construction</h6>
+                            <p>Ciment, sable, gravier…</p>
+                            <h6>•	Répertoire : Toute location de matériels de construction</h6>
+                            <p>Bois, Bambou, bétonnière, bennes, chariots, engins et machines BTP</p>
+
+
                             <h6 class="py-1">• Construction</h6>
+                            <h6 class="py-2">Comment construire avec le CCGIM</h6>
+                            <p>A travers notre site, cabinet ccgim.com
+                                Tout investisseur s’inscrit et défini son projet :
+                            </p>
+
+                            <p class="p-0">- Identité</p>
+                            <p class="p-0">- Contacts</p>
+                            <p class="p-0">- Localité</p>
+                            <p class="p-0">- Titre de propriété</p>
+                            <p class="p-0">- Type de maison</p>
+                            <p class="p-0">- Budget prévisionnel</p>
+                            <p>Le CCGIM analyse et fixe un RDV afin de discuter du projet (Etude technique, dossier technique, plan, permis de construire, permis de d’habiter…assistance technique par un Architect et juridique par un notaire)</p>
                             <h6 class="py-1">• Gestion</h6>
 
                             <ul>
-                                <li> - Baux administratifs des Forces et Défense de Sécurité (Militaire, Marin, Aviateur, Pompier, Policier, Garde pénitentiaire, Gendarme)</li>
+                                <li> - Baux administratifs des Forces de Défense et de Sécurité (Militaire, Marin, Aviateur, Pompier, Policier, Garde pénitentiaire, Gendarme)</li>
                                 <li> - Recouvrement des loyers (Contrat à usage d’habitation)</li>
 
                             </ul>
+
+                            <h6 class="py-2">Comment confier la gestion de mes biens au CCGIM</h6>
+                            <p class="p-0">- Identité</p>
+                            <p class="p-0">- Contacts</p>
+                            <p class="p-0">- Localité</p>
+                            <p class="p-0">- Titre de propriété</p>
+                            <p class="p-0">- Numéro compte contribuable et avis d’imposition</p>
+                            <p class="p-0">- RIB (Relevé d’Identité Bancaire)</p>
+                            <p class="p-0">- Type de bien</p>
+                            <p class="p-0">- Nombre d’appartements disponibles</p>
+                            <p class="p-0">- Etat des lieux</p>
+                            <p class="p-0">- Coût des loyers</p>
+
+                            <p>Le CCGIM analyse et fixe un RDV afin de discuter du projet :
+                                Contrat procuration CCGIM à établir en deux exemplaires et à faire légaliser à la mairie de la localité la plus proche. (Coût 10 000 F CFA par lot)
+                            </p>
+                            <p>Le CCGIM vous représente selon les termes du contrat procuration à fin d’agir en votre nom et dans vos intérêts. (Impôts, CIE, SODECI, Tribunaux, Services des baux administratifs…)</p>
+                            <p>Chaque mois au plus tard le 15 du mois, le CCGIM établi les fiches des encaissements des loyers avec l’identité de tous les locataires, les montants payés, les dates, les moyens de paiement et les niveaux des éventuels arriérés.</p>
+                            <p>Pour la gestion des biens sous bail administratif, Chaque mois au plus tard le 15 du mois, le CCGIM établi les relevés de tous les baux du propriétaire après avoir pris les listings des paiements des baux des différents services des baux administratifs. Ministère de la Défense, Police Nationale, Marine Nationale, gardes pénitentiaires.</p>
+
+                            <h6 class="py-2">Comment louer avec le CCGIM</h6>
+                            <p>A travers notre site, cabinet ccgim.com
+                                Tout demandeur s’inscrit et défini son projet :
+                            </p>
+                            <p class="p-0">- Identité (4 copies CNI)</p>
+                            <p class="p-0">- Contacts</p>
+                            <p class="p-0">- Localité</p>
+                            <p class="p-0">- RIB (Relevé d’Identité Bancaire)</p>
+                            <p class="p-0">- Type de logement (Maison basse, appartement, nombre de pièces …)</p>
+                            <p class="p-0">- Budget (2 mois de caution + 2 mois d’avance + le mois agence + 1 500 F CFA mutations CIE 5 Ampères ou 37 000 F 10 Ampères + 27 000 F mutation SODECI)</p>
+
+                            <p> Le CCGIM analyse et fixe un RDV afin de visiter les lieux et établir les contrats.</p>
+                            Retenez que les loyers sont payés à l’avance du premier au 5 du mois.
+                            Une pénalité de 10% du loyer est infligée à tout retardataire après le 10 du mois.
+
+                            <p> Le CCGIM innove : Les loyers sont payés à nos caisses à l’agence situé à YOPOUGON TOIT ROUGE, par
+                                versement ou virement sur nos comptes bancaires, par dépôt sur nos comptes mobile money à la charge des locataires.</p>
+
+                            <p>  Ces dispositions spécifiques au CCGIM permettent de respecter la dignité et l’intimité du locataire. Ceci permet au
+                                CCGIM d’éviter les éventuels faux billets de banque ou des billets dégradés refusables par tous.
+                            </p>
+
+
                             <h6 class="py-1">•	Vente et Achat </h6>
                             <ul>
                                 <li>-	Terrain</li>
                                 <li>-	Maison</li>
                             </ul>
+
+                            <h6 class="py-2">Comment vendre ou acheter avec le CCGIM</h6>
+                            <p class="p-0">- Identité</p>
+                            <p class="p-0">- Contacts</p>
+                            <p class="p-0">- Localité</p>
+                            <p class="p-0">- Titre de propriété</p>
+                            <p class="p-0">- Type de maison</p>
+                            <p class="p-0">- Prix ou Budget prévisionnel</p>
+                            <p>Le CCGIM analyse et fixe un RDV afin de discuter du projet (Etude technique, dossier technique, plan, permis de construire, permis de d’habiter…assistance juridique par un notaire)</p>
+
                         </div>
 
                     </div>

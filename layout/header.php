@@ -43,6 +43,7 @@
 <link rel="stylesheet" href="<?=$cdn_domaine?>/assets/libs/intltelinput/css/intlTelInput.min.css"/>
 <link rel="stylesheet" href="<?=$cdn_domaine?>/assets/libs/sweetalert/sweetalert.css"  type="text/css">
 <style>
+
 /*#18a3f4*/
 .btn-one, .main-menu .navigation>li>a,.single-service-style1 .title-holder .button-box a, .single-features-style1 .button-box a, .about-style2__image-box .overlay-box h3,.breadcrumb-area .title h2{
     text-transform: inherit !important;
@@ -323,6 +324,9 @@ figcaption{
     font-size: 18px !important;
     margin-bottom: 0 !important;
     color: #777 !important;
+}
+.font30{
+    font-size: 30px !important;
 }
 
 

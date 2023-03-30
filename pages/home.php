@@ -37,7 +37,7 @@ include_once $layout.'/header.php'
                             <div class="inner-text">
                                 <h3> <a href="<?=$domaine?>/ccgim-monetique">CCGIM IMMOBILIER </a></h3>
                                 <div class="text">
-                                    <p>Nous sommes une entreprise spécialisée dans la vente de maisons </p>
+                                    <p>Nous sommes une Agence immobilière agréée spécialisée dans la gestions des baux...</p>
                                 </div>
                             </div>
 
@@ -68,7 +68,7 @@ include_once $layout.'/header.php'
                                 </div>
                             </div>
                             <div class="button-box">
-                                <a href="<?=$domaine?>/ccgim-bureautique">En savoir plus</a>
+                                <a href="<?=$domaine?>/formations">En savoir plus</a>
                             </div>
                             <div class="icon">
                                 <span class="flaticon-roof-1"></span>
@@ -89,7 +89,7 @@ include_once $layout.'/header.php'
                             <div class="inner-text">
                                     <h3><a href="<?=$domaine?>/ccgim-divers">CCGIM DIVERS</a></h3>
                                 <div class="text">
-                                    <p>Architecte, géomètre, topographe, dessinateur, maçon, plombier, électricien...</p>
+                                    <p>Infographie et mini imprimerie (LOGO, Faire part, carte de Viste, calendrier…</p>
                                 </div>
                             </div>
                             <div class="button-box">
@@ -406,7 +406,7 @@ include_once $layout.'/header.php'
             </div>
             <div class="col-md-5">
                 <figure>
-                    <img src="<?=$cdn_domaine?>/media/dg.png" class="dg-image" alt=""/>
+                    <img src="<?=$cdn_domaine?>/media/dg01.jpg" class="dg-image" alt=""/>
                     <figcaption>
 
                         <div class="authorised-person-info">

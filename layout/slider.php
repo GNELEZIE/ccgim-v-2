@@ -9,7 +9,7 @@
                         <h2>CCGIM</h2>
                     </div>
                     <div class="text">
-                        <p> Au CCGIM, nous visons la perfection et nous vous garantissons <br> satisfaction totale.</p>
+                        <p class="font30">Cabinet Conseil et de Gestion Immobilière <br> Agence immobilière agréée </p>
                     </div>
                     <div class="btns-box">
                         <a class="btn-one" href="<?=$domaine?>/a-propos">
@@ -28,10 +28,10 @@
                         <h2>Nos services</h2>
                     </div>
                     <div class="text">
-                        <p><span class="pr-2">Vente de maison,</span><span class="pr-2">Location de maison,</span><span class="pr-2">Louer un techniciens,<span class="pr-2">divers...</span></p>
+                        <p><span class="pr-2">CCGIM IMMOBILIER,</span><span class="pr-2">CCGIM BUREAUTIQUE,</span><span class="pr-2">CCGIM MONETIQUE,<span class="pr-2">	CCGIM WIFI...</span></p>
                     </div>
                     <div class="btns-box">
-                        <a class="btn-one" href="<?=$domaine?>/louer-logement">
+                        <a class="btn-one" href="<?=$domaine?>/ccgim-immobilier">
                             <span class="txt">En savoir plus</span>
                         </a>
                     </div>
@@ -47,7 +47,7 @@
                         <h2>Nos techniciens</h2>
                     </div>
                     <div class="text">
-                        <p>Nous sommes à votre service pour vous aider à trouver la meilleure<br>  solution pour votre projet immobilier.</p>
+                        <p>Nous sommes à votre service pour vous aider à trouver Les meilleurs<br>   techniciens pour vos projets immobiliers.</p>
                     </div>
                     <div class="btns-box">
                         <a class="btn-one" href="<?=$domaine?>/techniciens">

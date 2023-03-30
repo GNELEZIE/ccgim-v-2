@@ -108,7 +108,7 @@ include_once $layout.'/header.php'
                         <div class="top">
 
                             <div class="img-box">
-                                <img src="<?=$cdn_domaine?>/media/mobile.jpg" alt="">
+                                <img src="<?=$cdn_domaine?>/media/mobile01.png" alt="">
                             </div>
                         </div>
 

@@ -113,6 +113,7 @@ include_once $layout.'/header.php'
                         </div>
 
                         <div class="service-details-text-box1">
+                            <h6 class="py-2">Formation pratique(Administration, bureautique, comptabilité, fiscalité)</h6>
                           <h6 class="py-1">• Stages de préparation pour la validation de BTS</h6>
                             <h6 class="py-1"> •	Stage de perfectionnement</h6>
                         </div>
