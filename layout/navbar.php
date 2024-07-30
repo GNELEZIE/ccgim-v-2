@@ -31,8 +31,9 @@
                                         <li class="<?= page_active('ccgim-divers') ;?>"><a href="<?=$domaine?>/ccgim-divers">CCGIM DIVERS</a></li>
                                     </ul>
                                 </li>
-                                <li class="<?= page_active('logements') ;?>"><a href="<?=$domaine?>/logements">Logements</a></li>
-                                <li class="<?= page_active('locataire') ;?>"><a href="<?=$app_domaine?>/inscription" >Inscription</a></li>
+<!--                                <li class="--><?//= page_active('logements') ;?><!--"><a href="--><?//=$domaine?><!--/logements">Logements</a></li>-->
+                                <li class=""><a href="https://proprietaire.cabinet-ccgim.com">Propriétaire</a></li>
+                                <li class=""><a href="https://locataire.cabinet-ccgim.com">Locataire</a></li>
                                 <li class="<?= page_active('contacts') ;?>"><a href="<?=$domaine?>/contacts">Contact</a></li>
                             </ul>
                         </div>
@@ -45,7 +46,7 @@
                 <div class="space-box1"></div>
                 <div class="header-right_buttom">
                     <div class="btns-box">
-                        <a class="btn-one" href="<?=$app_domaine?>/connexion">
+                        <a class="btn-one" href="#">
                             <i class="fa fa-angle-right" aria-hidden="true"></i>
                             <span class="txt">Espace client</span>
                         </a>

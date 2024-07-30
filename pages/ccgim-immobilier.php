@@ -173,7 +173,9 @@ include_once $layout.'/header.php'
                             <p class="p-0">- Contacts</p>
                             <p class="p-0">- Localité</p>
                             <p class="p-0">- RIB (Relevé d’Identité Bancaire)</p>
+                            <p class="p-0">- Contrat procuration CCGIM(pièce d'identité, titre de propriété, avis d'imposition fiscale, RIB, contacts, 10 000  F CFA par lot)</p>
                             <p class="p-0">- Type de logement (Maison basse, appartement, nombre de pièces …)</p>
+                            <p class="p-0">- Bail administratif (pièce d'identité, titre de propriété, avis d'imposition fiscale, RIB, contacts, rapport d'expertise, contrat de bail administratif à l'imprimerie nationale, 5 timbres fiscaux de 1000  F CFA et frais de dossier 5 à 10 000 F)</p>
                             <p class="p-0">- Budget (2 mois de caution + 2 mois d’avance + le mois agence + 1 500 F CFA mutations CIE 5 Ampères ou 37 000 F 10 Ampères + 27 000 F mutation SODECI)</p>
 
                             <p> Le CCGIM analyse et fixe un RDV afin de visiter les lieux et établir les contrats.</p>

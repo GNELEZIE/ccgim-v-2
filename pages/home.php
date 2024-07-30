@@ -351,13 +351,13 @@ include_once $layout.'/header.php'
                     <div class="inner-content mot-dg">
                         <div class="text">
                             <p class="text-white">
-                                J’ai été le chef du servie logement de la Marine Nationale chargé de la gestion des baux administratifs de janvier 2003 au 31 Décembre 2014. Ces douze années passées dans la gestion des baux ont forgé mon destin. Aujourd’hui je suis agent immobilier agréé de Côte d’Ivoire.
+                                J’ai été le chef du service logement de la Marine Nationale chargé de la gestion des baux administratifs de janvier 2003 au 31 Décembre 2014. Ces douze années passées dans la gestion des baux ont forgé mon destin. Aujourd’hui je suis agent immobilier agréé de Côte d’Ivoire.
                             </p>
                             <p class="text-white">
                                 Le CCGIM est donc le fruit de ce si long chemin. Douze ans d’expériences, douze ans d’expertises dans la gestion immobilière.  Au CCGIM, nous faisons la promotion des baux administratifs.
                             </p>
                             <p class="text-white">
-                                Notre particularité, c'’est la transparence, la fiabilité et la sincérité dans la gestion immobilière.
+                                Notre particularité, c'est la transparence, la fiabilité et la sincérité dans la gestion immobilière.
                             </p>
                             <p class="text-white">
                                 Je suis particulièrement heureux, en ma qualité de gérant du cabinet conseil et gestion immobilière de vous souhaiter à tous la bienvenue sur notre site web www.cabinet-ccgim.com
