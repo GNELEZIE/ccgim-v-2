@@ -333,48 +333,15 @@ figcaption{
     padding: 0px 0 1px !important;
 }
 
-/*.mobile-nav-toggler .inner {*/
-    /*padding: 2px 2px  !important;*/
-/*}*/
-/*.mobile-nav-toggler .icon-bar {*/
-    /*height: 5px !important;*/
-    /*width: 54px !important;*/
+.mobile-nav-toggler .inner {
+    padding: 2px 2px  !important;
+}
+.mobile-nav-toggler .icon-bar {
+    height: 5px !important;
+    width: 54px !important;
 
-/*}*/
-
-.header{
-    z-index: 999999 !important;
-    background: transparent !important;
 }
 
-.m_menu{
-    text-align: center;
-    z-index: 999999999;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: #ffff;
-    padding: 5px 15px;
-}
-.mynavbar .navbar-nav{
-    flex-direction: row;
-}
-.mynavbar .navbar-nav li{
-    padding: 7px;
-    line-height: 0.5;
-}
-
-.version-mobile{
-    display: none;
-}
-
-
-@media(max-width: 767px) {
-    .version-mobile {
-        display: block !important;
-    }
-}
 
 
 </style>
@@ -382,22 +349,7 @@ figcaption{
 </head>
 
 <body>
-<div class="m_menu version-mobile">
-    <nav class="mynavbar">
-        <ul class="navbar-nav">
 
-            <li class="nav-item">
-                <i class="fa fa-user"></i>
-                <a class="nav-link text-dark" href="https://proprietaire.cabinet-ccgim.com">Propriétaire</a>
-            </li>
-            <li class="nav-item">
-                <i class="fa fa-user"></i>
-                <a class="nav-link text-dark" href="https://locataire.cabinet-ccgim.com">Locataire</a>
-            </li>
-        </ul>
-
-    </nav>
-</div>
 <div class="boxed_wrapper ltr">
     <div class="loader-wrap">
         <div class="preloader"></div>
