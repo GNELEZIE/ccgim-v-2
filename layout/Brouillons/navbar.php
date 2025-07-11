@@ -46,7 +46,7 @@
                 <div class="space-box1"></div>
                 <div class="header-right_buttom">
                     <div class="btns-box">
-                        <a class="btn-one" href="https://proprietaire.cabinet-ccgim.com">
+                        <a class="btn-one" href="#">
                             <i class="fa fa-angle-right" aria-hidden="true"></i>
                             <span class="txt">Espace client</span>
                         </a>

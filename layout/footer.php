@@ -91,7 +91,7 @@
                     <p>Copyright &copy;  2023 CCGIM </p>
                 </div>
                 <div class="footer-menu">
-                    <p class="m-0">Designed and Developed by <a href="https://makompe.com" target="_blank">Makompe Communication</a></p>
+                    <p class="m-0">Designed and Developed by <a href="https://tera-visions.com" target="_blank">Téra Vision</a></p>
                 </div>
             </div>
         </div>

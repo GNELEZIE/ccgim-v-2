@@ -13,6 +13,60 @@ include_once $layout.'/header.php'
     include_once $layout.'/slider.php';
     ?>
 </section>
+        <section class="blog-page blog-page-one" style="padding: 50px 0 0;">
+            <div class="container">
+                <div class="sec-title pb-17 center text-center">
+                    <div class="sub-title">
+                        <h6><span class="border-left"></span> Notre actualité <span class="border-right"></span></h6>
+                    </div>
+                </div>
+                <div class="row text-right-rtl">
+                    <div class="col-xl-6 col-lg-6">
+                        <div class="single-blog-style1 wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
+                            <div class="img-holder">
+                                <div class="inner">
+                                    <img src="<?=$cdn_domaine?>/assets/images/blog/blog-v1-1.jpg" alt="">
+                                </div>
+                                <div class="categories-date-box ">
+                                    <div class="categories-box box-date">
+                                        <h6 style="text-transform : initial !important;"><span class="flaticon-calendar"></span>Publié le 11/07/2025</h6>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-holder short-txt">
+                                <h3 class="blog-title">
+                                    <a href="<?=$domaine?>/blog">Protecting Your Roof From Storm Damage</a>
+                                </h3>
+                                <div class="text">
+                                    <p>Prevents our being able do what we like best every pleasure avoided...</p>
+                                </div>
+                                <div class="bottom-box">
+                                    <div class="left">
+                                        <a class="btn-two" href="<?=$domaine?>/blog/ok" style="text-transform: inherit">En savoir plus</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    </div>
+                </div>
+             </section>
+
+        <div class="row">
+            <div class="col-xl-12 text-center">
+                <div class="service-style1__bottom-text">
+                    <div class="btns-box">
+                        <a class="btn-one style2 btn-primary" href="#">
+                            <span class="txt"> Voir plus d'actualité</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
 <section class="service-style1-area">
     <div class="pattern-bg" style="background-image: url(<?=$cdn_domaine?>/media/thm-pattern-2.png);"></div>
     <div class="container">
