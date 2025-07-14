@@ -392,6 +392,11 @@ figcaption{
     padding-bottom: 17px !important;
 }
 
+.border-left-line {
+    width: 4px;
+    height: 20px;
+    background-color: #00aa55;
+}
 
 
 

@@ -22,31 +22,133 @@ include_once $layout.'/header.php'
                 </div>
                 <div class="row text-right-rtl">
                     <div class="col-xl-6 col-lg-6">
-                        <div class="single-blog-style1 wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
-                            <div class="img-holder">
-                                <div class="inner">
-                                    <img src="<?=$cdn_domaine?>/assets/images/blog/blog-v1-1.jpg" alt="">
+
+                        <div class="card offre-card mb-3">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center mb-2">
+                                    <div class="border-left-line mr-2"></div>
+                                    <h5 class="text-success font-weight-bold text-uppercase mb-0">Stagiaire Commis Cuisine</h5>
                                 </div>
-                                <div class="categories-date-box ">
-                                    <div class="categories-box box-date">
-                                        <h6 style="text-transform : initial !important;"><span class="flaticon-calendar"></span>Publié le 11/07/2025</h6>
-                                    </div>
+
+                                <p class="mb-2 text-muted small">
+                                    Publié le <strong>07 May 2025</strong> &nbsp;|&nbsp;
+                                    <strong>COCODY</strong> &nbsp;|&nbsp;
+                                    <span class="text-danger">Date clôture: <strong>17 Jul 2025</strong></span>
+                                </p>
+
+                                <div class="mb-2">
+                                    <span class="badge badge-primary text-uppercase">Stage de Qualification</span>
+                                    <span class="badge badge-warning text-white text-uppercase">N° Réf: KOUM-48201-05-2025</span>
                                 </div>
-                            </div>
-                            <div class="text-holder short-txt">
-                                <h3 class="blog-title">
-                                    <a href="<?=$domaine?>/blog">Protecting Your Roof From Storm Damage</a>
-                                </h3>
-                                <div class="text">
-                                    <p>Prevents our being able do what we like best every pleasure avoided...</p>
-                                </div>
-                                <div class="bottom-box">
-                                    <div class="left">
-                                        <a class="btn-two" href="<?=$domaine?>/blog/ok" style="text-transform: inherit">En savoir plus</a>
-                                    </div>
-                                </div>
+
+                                <p class="mb-2 small text-uppercase text-dark">
+                                    - Assister le chef de partie de l'entreprise. Préparer les ingrédients.
+                                    Réaliser des plats. Organiser le poste de travail. Respecter les normes
+                                    d'hygiène et de sécurité. Gestion des stoc...
+                                </p>
+
+                                <a href="#" class="btn btn-sm btn-outline-success" data-toggle="modal" data-target="#offreModal">Voir plus</a>
                             </div>
                         </div>
+
+
+
+
+
+
+
+
+
+
+                        <!--                        <div class="single-blog-style1 wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">-->
+<!--                            <div class="img-holder">-->
+<!--                                <div class="inner">-->
+<!--                                    <img src="--><?//=$cdn_domaine?><!--/assets/images/blog/blog-v1-1.jpg" alt="">-->
+<!--                                </div>-->
+<!--                                <div class="categories-date-box ">-->
+<!--                                    <div class="categories-box box-date">-->
+<!--                                        <h6 style="text-transform : initial !important;"><span class="flaticon-calendar"></span>Publié le 11/07/2025</h6>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <div class="text-holder short-txt">-->
+<!--                                <h3 class="blog-title">-->
+<!--                                    <a href="--><?//=$domaine?><!--/blog">Protecting Your Roof From Storm Damage</a>-->
+<!--                                </h3>-->
+<!--                                <div class="text">-->
+<!--                                    <p>Prevents our being able do what we like best every pleasure avoided...</p>-->
+<!--                                </div>-->
+<!--                                <div class="bottom-box">-->
+<!--                                    <div class="left">-->
+<!--                                        <a class="btn-two" href="--><?//=$domaine?><!--/blog/ok" style="text-transform: inherit">En savoir plus</a>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+                    </div><div class="col-xl-6 col-lg-6">
+
+                        <div class="card offre-card mb-3">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center mb-2">
+                                    <div class="border-left-line mr-2"></div>
+                                    <h5 class="text-success font-weight-bold text-uppercase mb-0">Stagiaire Commis Cuisine</h5>
+                                </div>
+
+                                <p class="mb-2 text-muted small">
+                                    Publié le <strong>07 May 2025</strong> &nbsp;|&nbsp;
+                                    <strong>COCODY</strong> &nbsp;|&nbsp;
+                                    <span class="text-danger">Date clôture: <strong>17 Jul 2025</strong></span>
+                                </p>
+
+                                <div class="mb-2">
+                                    <span class="badge badge-primary text-uppercase">Stage de Qualification</span>
+                                    <span class="badge badge-warning text-white text-uppercase">N° Réf: KOUM-48201-05-2025</span>
+                                </div>
+
+                                <p class="mb-2 small text-uppercase text-dark">
+                                    - Assister le chef de partie de l'entreprise. Préparer les ingrédients.
+                                    Réaliser des plats. Organiser le poste de travail. Respecter les normes
+                                    d'hygiène et de sécurité. Gestion des stoc...
+                                </p>
+
+                                <a href="#" class="btn btn-sm btn-outline-success" data-toggle="modal" data-target="#offreModal">Voir plus</a>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+
+
+                        <!--                        <div class="single-blog-style1 wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">-->
+<!--                            <div class="img-holder">-->
+<!--                                <div class="inner">-->
+<!--                                    <img src="--><?//=$cdn_domaine?><!--/assets/images/blog/blog-v1-1.jpg" alt="">-->
+<!--                                </div>-->
+<!--                                <div class="categories-date-box ">-->
+<!--                                    <div class="categories-box box-date">-->
+<!--                                        <h6 style="text-transform : initial !important;"><span class="flaticon-calendar"></span>Publié le 11/07/2025</h6>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <div class="text-holder short-txt">-->
+<!--                                <h3 class="blog-title">-->
+<!--                                    <a href="--><?//=$domaine?><!--/blog">Protecting Your Roof From Storm Damage</a>-->
+<!--                                </h3>-->
+<!--                                <div class="text">-->
+<!--                                    <p>Prevents our being able do what we like best every pleasure avoided...</p>-->
+<!--                                </div>-->
+<!--                                <div class="bottom-box">-->
+<!--                                    <div class="left">-->
+<!--                                        <a class="btn-two" href="--><?//=$domaine?><!--/blog/ok" style="text-transform: inherit">En savoir plus</a>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
                     </div>
 
                     </div>
