@@ -15,6 +15,7 @@
                              id="navbarSupportedContent">
                             <ul class="navigation clearfix">
                                 <li class="<?= page_active('') ;?>"><a href="<?=$domaine?>">Accueil</a></li>
+                                <li class="<?= page_active('blog') ;?>"><a href="<?=$domaine?>/blog">Nos offres</a></li>
                                 <li class="<?= page_active('a-propos') ;?>"><a href="<?=$domaine?>/a-propos">A propos</a></li>
                                 <li class="dropdown <?= page_active('ccgim-immobilier') ;?> <?= page_active('ccgim-monetique') ;?>
                                 <?= page_active('techniciens') ;?>

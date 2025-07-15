@@ -7,6 +7,75 @@ class Utilisateur
         $this->bdd = bdd();
     }
 
+
+
+    // Table offre
+
+    public function getAllOffre(){
+        $query = "SELECT * FROM offre WHERE statut = 0 ORDER BY id_offre  DESC ";
+        $rs = $this->bdd->query($query);
+        return $rs;
+    }
+    public function getAllOffre4(){
+        $query = "SELECT * FROM offre WHERE statut = 0 ORDER BY id_offre  DESC LIMIT 4";
+        $rs = $this->bdd->query($query);
+        return $rs;
+    }
+
+    public function addOffre($date_offre,$titre,$slug_offre,$description,$photo,$typ){
+        $query = "INSERT INTO offre(date_offre,titre,slug_offre,description,photo,typ)
+                  VALUES (:date_offre,:titre,:slug_offre,:description,:photo,:typ)";
+        $rs = $this->bdd->prepare($query);
+        $rs->execute(array(
+            "date_offre" => $date_offre,
+            "titre" => $titre,
+            "slug_offre" => $slug_offre,
+            "description" => $description,
+            "photo" => $photo ,
+            "typ" => $typ
+        ));
+
+        $nb = $rs->rowCount();
+
+        if($nb > 0){
+            $r = $this->bdd->lastInsertId();
+            return $r;
+        }
+    }
+
+
+    public function verifOffre($propriete,$val){
+
+        $query = "SELECT * FROM offre WHERE $propriete = :val";
+        $rs = $this->bdd->prepare($query);
+        $rs->execute(array(
+            "val" => $val
+        ));
+
+        return $rs;
+    }
+
+    public function getOffreBySlug($slug_offre){
+
+        $query = "SELECT * FROM offre WHERE slug_offre = :slug_offre";
+        $rs = $this->bdd->prepare($query);
+        $rs->execute(array(
+            "slug_offre" => $slug_offre
+        ));
+
+        return $rs;
+    }
+
+
+
+
+
+
+
+
+
+
+
     //Create
     public function addLocataire($userDate,$email,$slug,$lgt,$nom,$prenom,$isophone,$dialPhone,$phone,$mot_de_passe,$typeCompte){
         $query = "INSERT INTO utilisateur(date_utilisateur,email,slug,nom,prenom,iso_phone,dial_phone,phone,mot_de_passe,type_compte)

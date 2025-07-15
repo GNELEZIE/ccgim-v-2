@@ -398,7 +398,9 @@ figcaption{
     background-color: #00aa55;
 }
 
-
+.bg-offre{
+    background: #f2f2f2 !important;
+}
 
 
 

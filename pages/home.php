@@ -13,159 +13,101 @@ include_once $layout.'/header.php'
     include_once $layout.'/slider.php';
     ?>
 </section>
-        <section class="blog-page blog-page-one" style="padding: 50px 0 0;">
-            <div class="container">
-                <div class="sec-title pb-17 center text-center">
-                    <div class="sub-title">
-                        <h6><span class="border-left"></span> Notre actualité <span class="border-right"></span></h6>
+<section class="blog-page blog-page-one bg-offre" style="padding: 50px 0 0;">
+    <div class="container">
+        <div class="sec-title pb-17 center text-center">
+            <div class="sub-title">
+                <h6 style="color: #00aa55"><span class="border-left"></span> Notre actualité <span class="border-right"></span></h6>
+            </div>
+        </div>
+        <div class="row text-right-rtl">
+
+            <?php
+            $dataOf = $utilisateur->getAllOffre4();
+
+            while($dataOffre = $dataOf->fetch()){
+                if(html_entity_decode(stripslashes($dataOffre["typ"])) == "Offres d'emploi"){
+
+                  $bgcolor = "badge-primary";
+
+                }elseif(html_entity_decode(stripslashes($dataOffre["typ"])) == "Achats"){
+
+                    $bgcolor = "badge-warning";
+
+                }elseif(html_entity_decode(stripslashes($dataOffre["typ"])) == "Ventes"){
+
+                    $bgcolor = "badge-info";
+
+                }elseif(html_entity_decode(stripslashes($dataOffre["typ"])) == "Locations"){
+
+                    $bgcolor = "badge-danger";
+
+                }else{
+                    $bgcolor = "badge-success";
+                }
+
+                if($dataOffre["date_cloture"] == '0000-00-00 00:00:00'){
+
+                    $date_clotures = '';
+                    $cotes = '';
+
+
+                }else{
+                    $date_clotures = '<span class="text-danger">Date clôture:   <strong>'. afficherDateFr($dataOffre["date_cloture"]).'</strong></span>';
+                    $cotes = '&nbsp;|&nbsp;';
+                }
+
+                ?>
+
+                <div class="col-xl-6 col-lg-6">
+                    <div class="card offre-card mb-3">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-2">
+                                <div class="border-left-line mr-2"></div>
+                                <h5 class="text-success font-weight-bold text-uppercase mb-0"><?= html_entity_decode(stripslashes($dataOffre["titre"])) ?></h5>
+                            </div>
+
+                            <p class="mb-2 text-muted small">
+                                Publié le <strong> <?=afficherDateFr($dataOffre["date_offre"]) ?> </strong> <?=$cotes?>
+<!--                                <strong>COCODY</strong> &nbsp;|&nbsp;-->
+                              <?=$date_clotures?>
+                            </p>
+
+                            <div class="mb-2">
+                                <span class="badge <?=$bgcolor?> text-uppercase"><?= html_entity_decode(stripslashes($dataOffre["typ"])) ?></span>
+<!--                                <span class="badge badge-warning text-white text-uppercase">N° Réf: KOUM-48201-05-2025</span>-->
+                            </div>
+
+                            <p class="mb-2 small text-uppercase text-dark">
+                                <?= html_entity_decode(stripslashes($dataOffre["samury"])) ?>
+                            </p>
+
+                            <a href="<?=$domaine?>/blog/<?=html_entity_decode(stripslashes($dataOffre["slug_offre"])) ?>" class="btn btn-sm btn-outline-success">Voir plus</a>
+                        </div>
                     </div>
                 </div>
-                <div class="row text-right-rtl">
-                    <div class="col-xl-6 col-lg-6">
 
-                        <div class="card offre-card mb-3">
-                            <div class="card-body">
-                                <div class="d-flex align-items-center mb-2">
-                                    <div class="border-left-line mr-2"></div>
-                                    <h5 class="text-success font-weight-bold text-uppercase mb-0">Stagiaire Commis Cuisine</h5>
-                                </div>
-
-                                <p class="mb-2 text-muted small">
-                                    Publié le <strong>07 May 2025</strong> &nbsp;|&nbsp;
-                                    <strong>COCODY</strong> &nbsp;|&nbsp;
-                                    <span class="text-danger">Date clôture: <strong>17 Jul 2025</strong></span>
-                                </p>
-
-                                <div class="mb-2">
-                                    <span class="badge badge-primary text-uppercase">Stage de Qualification</span>
-                                    <span class="badge badge-warning text-white text-uppercase">N° Réf: KOUM-48201-05-2025</span>
-                                </div>
-
-                                <p class="mb-2 small text-uppercase text-dark">
-                                    - Assister le chef de partie de l'entreprise. Préparer les ingrédients.
-                                    Réaliser des plats. Organiser le poste de travail. Respecter les normes
-                                    d'hygiène et de sécurité. Gestion des stoc...
-                                </p>
-
-                                <a href="#" class="btn btn-sm btn-outline-success" data-toggle="modal" data-target="#offreModal">Voir plus</a>
-                            </div>
-                        </div>
+            <?php
+            }
+            ?>
 
 
-
-
-
-
-
-
-
-
-                        <!--                        <div class="single-blog-style1 wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">-->
-<!--                            <div class="img-holder">-->
-<!--                                <div class="inner">-->
-<!--                                    <img src="--><?//=$cdn_domaine?><!--/assets/images/blog/blog-v1-1.jpg" alt="">-->
-<!--                                </div>-->
-<!--                                <div class="categories-date-box ">-->
-<!--                                    <div class="categories-box box-date">-->
-<!--                                        <h6 style="text-transform : initial !important;"><span class="flaticon-calendar"></span>Publié le 11/07/2025</h6>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                            <div class="text-holder short-txt">-->
-<!--                                <h3 class="blog-title">-->
-<!--                                    <a href="--><?//=$domaine?><!--/blog">Protecting Your Roof From Storm Damage</a>-->
-<!--                                </h3>-->
-<!--                                <div class="text">-->
-<!--                                    <p>Prevents our being able do what we like best every pleasure avoided...</p>-->
-<!--                                </div>-->
-<!--                                <div class="bottom-box">-->
-<!--                                    <div class="left">-->
-<!--                                        <a class="btn-two" href="--><?//=$domaine?><!--/blog/ok" style="text-transform: inherit">En savoir plus</a>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-                    </div><div class="col-xl-6 col-lg-6">
-
-                        <div class="card offre-card mb-3">
-                            <div class="card-body">
-                                <div class="d-flex align-items-center mb-2">
-                                    <div class="border-left-line mr-2"></div>
-                                    <h5 class="text-success font-weight-bold text-uppercase mb-0">Stagiaire Commis Cuisine</h5>
-                                </div>
-
-                                <p class="mb-2 text-muted small">
-                                    Publié le <strong>07 May 2025</strong> &nbsp;|&nbsp;
-                                    <strong>COCODY</strong> &nbsp;|&nbsp;
-                                    <span class="text-danger">Date clôture: <strong>17 Jul 2025</strong></span>
-                                </p>
-
-                                <div class="mb-2">
-                                    <span class="badge badge-primary text-uppercase">Stage de Qualification</span>
-                                    <span class="badge badge-warning text-white text-uppercase">N° Réf: KOUM-48201-05-2025</span>
-                                </div>
-
-                                <p class="mb-2 small text-uppercase text-dark">
-                                    - Assister le chef de partie de l'entreprise. Préparer les ingrédients.
-                                    Réaliser des plats. Organiser le poste de travail. Respecter les normes
-                                    d'hygiène et de sécurité. Gestion des stoc...
-                                </p>
-
-                                <a href="#" class="btn btn-sm btn-outline-success" data-toggle="modal" data-target="#offreModal">Voir plus</a>
-                            </div>
-                        </div>
-
-
-
-
-
-
-
-
-
-
-                        <!--                        <div class="single-blog-style1 wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">-->
-<!--                            <div class="img-holder">-->
-<!--                                <div class="inner">-->
-<!--                                    <img src="--><?//=$cdn_domaine?><!--/assets/images/blog/blog-v1-1.jpg" alt="">-->
-<!--                                </div>-->
-<!--                                <div class="categories-date-box ">-->
-<!--                                    <div class="categories-box box-date">-->
-<!--                                        <h6 style="text-transform : initial !important;"><span class="flaticon-calendar"></span>Publié le 11/07/2025</h6>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                            <div class="text-holder short-txt">-->
-<!--                                <h3 class="blog-title">-->
-<!--                                    <a href="--><?//=$domaine?><!--/blog">Protecting Your Roof From Storm Damage</a>-->
-<!--                                </h3>-->
-<!--                                <div class="text">-->
-<!--                                    <p>Prevents our being able do what we like best every pleasure avoided...</p>-->
-<!--                                </div>-->
-<!--                                <div class="bottom-box">-->
-<!--                                    <div class="left">-->
-<!--                                        <a class="btn-two" href="--><?//=$domaine?><!--/blog/ok" style="text-transform: inherit">En savoir plus</a>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-                    </div>
-
-                    </div>
-                </div>
-             </section>
-
-        <div class="row">
-            <div class="col-xl-12 text-center">
-                <div class="service-style1__bottom-text">
-                    <div class="btns-box">
-                        <a class="btn-one style2 btn-primary" href="#">
-                            <span class="txt"> Voir plus d'actualité</span>
-                        </a>
-                    </div>
+        </div>
+    </div>
+    <div class="row pb-5">
+        <div class="col-xl-12 text-center pb-2">
+            <div class="service-style1__bottom-text">
+                <div class="btns-box">
+                    <a class="btn-one style2 btn-primary" href="<?=$domaine?>/blog">
+                        <span class="txt"> Voir plus d'offre</span>
+                    </a>
                 </div>
             </div>
         </div>
+    </div>
+</section>
+
+
 
 
 
@@ -186,9 +128,9 @@ include_once $layout.'/header.php'
                         </div>
                         <div class="title-holder">
                             <a href="<?=$domaine?>/ccgim-immobilier">
-                            <div class="pattern-bg" style="background-image: url(<?=$cdn_domaine?>/media/thm-pattern-1.png);">
+                                <div class="pattern-bg" style="background-image: url(<?=$cdn_domaine?>/media/thm-pattern-1.png);">
 
-                            </div>
+                                </div>
                             </a>
                             <div class="inner-text">
                                 <h3> <a href="<?=$domaine?>/ccgim-monetique">CCGIM IMMOBILIER </a></h3>
@@ -243,7 +185,7 @@ include_once $layout.'/header.php'
                         <div class="title-holder">
                             <div class="pattern-bg" style="background-image: url(<?=$cdn_domaine?>/media/thm-pattern-1.png);"></div>
                             <div class="inner-text">
-                                    <h3><a href="<?=$domaine?>/ccgim-divers">CCGIM DIVERS</a></h3>
+                                <h3><a href="<?=$domaine?>/ccgim-divers">CCGIM DIVERS</a></h3>
                                 <div class="text">
                                     <p>Infographie et mini imprimerie (LOGO, Faire part, carte de Viste, calendrier…</p>
                                 </div>
@@ -313,187 +255,187 @@ include_once $layout.'/header.php'
     </div>
 </section>
 <section class="features-style1-area">
-<div class="pattern-bg" style="background-image: url(<?=$cdn_domaine?>/media/thm-pattern-4.png);"></div>
-<div class="container features-box">
-    <div class="row">
-        <div class="col-xl-3 col-lg-6 col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="100ms"
-             data-wow-duration="1500ms">
-            <div class="single-features-style1 first-child text-center">
-                <div class="single-features-style1__bg" style="background-image: url(<?=$cdn_domaine?>/media/features-1.jpg);"></div>
-                <div class="counting-box"></div>
-                <div class="inner">
-                    <div class="static-content">
-                        <div class="icon">
-                            <span class="flaticon-protection"></span>
-                        </div>
-                        <h3>Sécurité</h3>
-                    </div>
-                    <div class="overlay-content">
-                        <h3>Sécurité</h3>
-                        <p>Aucun souci à se faire ! Toutes les plateformes de transaction sécurisée sont intégrées.</p>
-                    </div>
-                </div>
-                <div class="button-box">
-                    <a href="<?=$domaine?>/a-propos"><span class="fa fa-angle-right"></span>Détails</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-xl-3 col-lg-6 col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="200ms"
-             data-wow-duration="1500ms">
-            <div class="single-features-style1 text-center">
-                <div class="single-features-style1__bg"
-                     style="background-image: url(<?=$cdn_domaine?>/media/features-1.jpg);"></div>
-                <div class="counting-box"></div>
-                <div class="inner">
-                    <div class="static-content">
-                        <div class="icon">
-                            <span class="flaticon-quality"></span>
-                        </div>
-                        <h3>Fiabilité</h3>
-                    </div>
-                    <div class="overlay-content">
-                        <h3>Fiabilité</h3>
-                        <p>Tout est fait pour la satisfaction de nos clients.</p>
-                    </div>
-                </div>
-                <div class="button-box">
-                    <a href="<?=$domaine?>/a-propos"><span class="fa fa-angle-right"></span>Détails</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-xl-3 col-lg-6 col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="300ms"
-             data-wow-duration="1500ms">
-            <div class="single-features-style1 bordernone text-center">
-                <div class="single-features-style1__bg"
-                     style="background-image: url(<?=$cdn_domaine?>/media/features-1.jpg);"></div>
-                <div class="counting-box"></div>
-                <div class="inner">
-                    <div class="static-content">
-                        <div class="icon">
-                            <span class="flaticon-construction-and-tools"></span>
-                        </div>
-                        <h3>Équipe professionnelle</h3>
-                    </div>
-                    <div class="overlay-content">
-                        <h3>Équipe professionnelle</h3>
-                        <p>Nous avons une équipe très compétente disponible toutes vos préoccupations.</p>
-                    </div>
-                </div>
-                <div class="button-box">
-                    <a href="<?=$domaine?>/a-propos"><span class="fa fa-angle-right"></span>Détails</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-xl-3 col-lg-6 col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="400ms"
-             data-wow-duration="1500ms">
-            <div class="single-features-style1 text-center">
-                <div class="single-features-style1__bg"
-                     style="background-image: url(<?=$cdn_domaine?>/media/features-1.jpg);"></div>
-                <div class="counting-box"></div>
-                <div class="inner">
-                    <div class="static-content">
-                        <div class="icon">
-                            <span class="flaticon-comment"></span>
-                        </div>
-                        <h3>Disponibilité</h3>
-                    </div>
-                    <div class="overlay-content">
-                        <h3>Disponibilité</h3>
-                        <p>Toute une équipe à votre disposition pour vous écouter et vous servir !</p>
-                    </div>
-                </div>
-                <div class="button-box">
-                    <a href="<?=$domaine?>/a-propos"><span class="fa fa-angle-right"></span>Détails</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="fact-counter-box">
-    <div class="container">
-        <div class="sec-title center text-center">
-            <div class="sub-title">
-                <h6><span class="border-left"></span> Statitisque <span class="border-right"></span>
-                </h6>
-            </div>
-            <h2>Nos chiffres</h2>
-        </div>
+    <div class="pattern-bg" style="background-image: url(<?=$cdn_domaine?>/media/thm-pattern-4.png);"></div>
+    <div class="container features-box">
         <div class="row">
-            <div class="col-xl-3 col-lg-6 col-md-6">
-                <div class="single-fact-counter text-center wow slideInUp" data-wow-delay="00ms"
-                     data-wow-duration="1500ms">
+            <div class="col-xl-3 col-lg-6 col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="100ms"
+                 data-wow-duration="1500ms">
+                <div class="single-features-style1 first-child text-center">
+                    <div class="single-features-style1__bg" style="background-image: url(<?=$cdn_domaine?>/media/features-1.jpg);"></div>
+                    <div class="counting-box"></div>
                     <div class="inner">
-                        <div class="pattern-bg" style="background-image: url(<?=$cdn_domaine?>/media/thm-pattern-3.png);"></div>
-                        <div class="icon">
-                            <span class="flaticon-roof-3"></span>
+                        <div class="static-content">
+                            <div class="icon">
+                                <span class="flaticon-protection"></span>
+                            </div>
+                            <h3>Sécurité</h3>
                         </div>
-                        <div class="count-outer count-box">
-                            <span class="count-text" data-speed="3000" data-stop="1">0</span>
-                            <span class="k">k</span>
+                        <div class="overlay-content">
+                            <h3>Sécurité</h3>
+                            <p>Aucun souci à se faire ! Toutes les plateformes de transaction sécurisée sont intégrées.</p>
                         </div>
                     </div>
-                    <div class="title">
-                        <h3>Locataires </h3>
+                    <div class="button-box">
+                        <a href="<?=$domaine?>/a-propos"><span class="fa fa-angle-right"></span>Détails</a>
                     </div>
                 </div>
             </div>
-            <div class="col-xl-3 col-lg-6 col-md-6">
-                <div class="single-fact-counter text-center wow slideInUp" data-wow-delay="100ms" data-wow-duration="1500ms"><div class="inner">
-                        <div class="pattern-bg" style="background-image: url(<?=$cdn_domaine?>/media/thm-pattern-3.png);"></div>
-                        <div class="icon">
-                            <span class="flaticon-worker"></span>
+
+            <div class="col-xl-3 col-lg-6 col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="200ms"
+                 data-wow-duration="1500ms">
+                <div class="single-features-style1 text-center">
+                    <div class="single-features-style1__bg"
+                         style="background-image: url(<?=$cdn_domaine?>/media/features-1.jpg);"></div>
+                    <div class="counting-box"></div>
+                    <div class="inner">
+                        <div class="static-content">
+                            <div class="icon">
+                                <span class="flaticon-quality"></span>
+                            </div>
+                            <h3>Fiabilité</h3>
                         </div>
-                        <div class="count-outer count-box">
-                            <span class="count-text" data-speed="3000" data-stop="84">0</span>
+                        <div class="overlay-content">
+                            <h3>Fiabilité</h3>
+                            <p>Tout est fait pour la satisfaction de nos clients.</p>
                         </div>
                     </div>
-                    <div class="title">
-                        <h3>Techniciens</h3>
+                    <div class="button-box">
+                        <a href="<?=$domaine?>/a-propos"><span class="fa fa-angle-right"></span>Détails</a>
                     </div>
                 </div>
             </div>
-            <div class="col-xl-3 col-lg-6 col-md-6">
-                <div class="single-fact-counter text-center wow slideInUp" data-wow-delay="200ms"
-                     data-wow-duration="1500ms">
+            <div class="col-xl-3 col-lg-6 col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="300ms"
+                 data-wow-duration="1500ms">
+                <div class="single-features-style1 bordernone text-center">
+                    <div class="single-features-style1__bg"
+                         style="background-image: url(<?=$cdn_domaine?>/media/features-1.jpg);"></div>
+                    <div class="counting-box"></div>
                     <div class="inner">
-                        <div class="pattern-bg"
-                             style="background-image: url(<?=$cdn_domaine?>/media/thm-pattern-3.png);"></div>
-                        <div class="icon">
-                            <span class="flaticon-award"></span>
+                        <div class="static-content">
+                            <div class="icon">
+                                <span class="flaticon-construction-and-tools"></span>
+                            </div>
+                            <h3>Équipe professionnelle</h3>
                         </div>
-                        <div class="count-outer count-box">
-                            <span class="count-text" data-speed="3000" data-stop="06">0</span>
-                            <span class="k">k</span>
+                        <div class="overlay-content">
+                            <h3>Équipe professionnelle</h3>
+                            <p>Nous avons une équipe très compétente disponible toutes vos préoccupations.</p>
                         </div>
                     </div>
-                    <div class="title">
-                        <h3>Récompenses Reçues</h3>
+                    <div class="button-box">
+                        <a href="<?=$domaine?>/a-propos"><span class="fa fa-angle-right"></span>Détails</a>
                     </div>
                 </div>
             </div>
-            <div class="col-xl-3 col-lg-6 col-md-6">
-                <div class="single-fact-counter text-center wow slideInUp" data-wow-delay="300ms"
-                     data-wow-duration="1500ms">
+            <div class="col-xl-3 col-lg-6 col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="400ms"
+                 data-wow-duration="1500ms">
+                <div class="single-features-style1 text-center">
+                    <div class="single-features-style1__bg"
+                         style="background-image: url(<?=$cdn_domaine?>/media/features-1.jpg);"></div>
+                    <div class="counting-box"></div>
                     <div class="inner">
-                        <div class="pattern-bg" style="background-image: url(<?=$cdn_domaine?>/media/thm-pattern-3.png);"></div>
-                        <div class="icon">
-                            <span class="flaticon-happy"></span>
+                        <div class="static-content">
+                            <div class="icon">
+                                <span class="flaticon-comment"></span>
+                            </div>
+                            <h3>Disponibilité</h3>
                         </div>
-                        <div class="count-outer count-box">
-                            <span class="count-text" data-speed="3000" data-stop="99">0</span>
-                            <span class="k">%</span>
+                        <div class="overlay-content">
+                            <h3>Disponibilité</h3>
+                            <p>Toute une équipe à votre disposition pour vous écouter et vous servir !</p>
                         </div>
                     </div>
-                    <div class="title">
-                        <h3>Clients Satisfaits</h3>
+                    <div class="button-box">
+                        <a href="<?=$domaine?>/a-propos"><span class="fa fa-angle-right"></span>Détails</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
+
+    <div class="fact-counter-box">
+        <div class="container">
+            <div class="sec-title center text-center">
+                <div class="sub-title">
+                    <h6><span class="border-left"></span> Statitisque <span class="border-right"></span>
+                    </h6>
+                </div>
+                <h2>Nos chiffres</h2>
+            </div>
+            <div class="row">
+                <div class="col-xl-3 col-lg-6 col-md-6">
+                    <div class="single-fact-counter text-center wow slideInUp" data-wow-delay="00ms"
+                         data-wow-duration="1500ms">
+                        <div class="inner">
+                            <div class="pattern-bg" style="background-image: url(<?=$cdn_domaine?>/media/thm-pattern-3.png);"></div>
+                            <div class="icon">
+                                <span class="flaticon-roof-3"></span>
+                            </div>
+                            <div class="count-outer count-box">
+                                <span class="count-text" data-speed="3000" data-stop="1">0</span>
+                                <span class="k">k</span>
+                            </div>
+                        </div>
+                        <div class="title">
+                            <h3>Locataires </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-md-6">
+                    <div class="single-fact-counter text-center wow slideInUp" data-wow-delay="100ms" data-wow-duration="1500ms"><div class="inner">
+                            <div class="pattern-bg" style="background-image: url(<?=$cdn_domaine?>/media/thm-pattern-3.png);"></div>
+                            <div class="icon">
+                                <span class="flaticon-worker"></span>
+                            </div>
+                            <div class="count-outer count-box">
+                                <span class="count-text" data-speed="3000" data-stop="84">0</span>
+                            </div>
+                        </div>
+                        <div class="title">
+                            <h3>Techniciens</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-md-6">
+                    <div class="single-fact-counter text-center wow slideInUp" data-wow-delay="200ms"
+                         data-wow-duration="1500ms">
+                        <div class="inner">
+                            <div class="pattern-bg"
+                                 style="background-image: url(<?=$cdn_domaine?>/media/thm-pattern-3.png);"></div>
+                            <div class="icon">
+                                <span class="flaticon-award"></span>
+                            </div>
+                            <div class="count-outer count-box">
+                                <span class="count-text" data-speed="3000" data-stop="06">0</span>
+                                <span class="k">k</span>
+                            </div>
+                        </div>
+                        <div class="title">
+                            <h3>Récompenses Reçues</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-md-6">
+                    <div class="single-fact-counter text-center wow slideInUp" data-wow-delay="300ms"
+                         data-wow-duration="1500ms">
+                        <div class="inner">
+                            <div class="pattern-bg" style="background-image: url(<?=$cdn_domaine?>/media/thm-pattern-3.png);"></div>
+                            <div class="icon">
+                                <span class="flaticon-happy"></span>
+                            </div>
+                            <div class="count-outer count-box">
+                                <span class="count-text" data-speed="3000" data-stop="99">0</span>
+                                <span class="k">%</span>
+                            </div>
+                        </div>
+                        <div class="title">
+                            <h3>Clients Satisfaits</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 
 <section class="bg-dg">
@@ -624,57 +566,57 @@ include_once $layout.'/header.php'
 
 
 <section class="contact-style1-area">
-        <div class="contact-style1_inner">
-                <div class="contact-style1_inner-bg" style="background-image: url(<?=$cdn_domaine?>/media/contact-style1_inner-bg.jpg);"></div>
-            <div class="base-bg"></div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-6 col-lg-6 col-md-5">
-                        <div class="contact-form-box1">
-                            <div class="sec-title">
-                                <div class="sub-title">
-                                    <h6><span class="border-left"></span>Avez vous une préoccupation ?</h6>
-                                </div>
-                                <h2>Contactez-nous</h2>
+    <div class="contact-style1_inner">
+        <div class="contact-style1_inner-bg" style="background-image: url(<?=$cdn_domaine?>/media/contact-style1_inner-bg.jpg);"></div>
+        <div class="base-bg"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-5">
+                    <div class="contact-form-box1">
+                        <div class="sec-title">
+                            <div class="sub-title">
+                                <h6><span class="border-left"></span>Avez vous une préoccupation ?</h6>
                             </div>
-                            <form id="contactForm"  class="default-form1" method="post" novalidate="novalidate">
-                                <div class="row">
-                                    <div class="col-xl-6">
-                                        <div class="input-box">
-                                            <input type="text" name="nom" id="nom" placeholder="Nom & Prénom" required="" aria-required="true">
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-6">
-                                        <div class="input-box">
-                                            <input type="tel" class="form-control style-input" id="phone" name="phone" maxlength="10" required>
-                                            <input type="hidden"  name="isoPhone" id="isoPhone" value="">
-                                            <input type="hidden"  name="dialPhone" id="dialPhone" value="">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-xl-12">
-                                        <div class="input-box">
-                                            <textarea name="message" id="message" rows="5" placeholder="Message"></textarea>
-                                        </div>
-
-                                        <div class="button-box">
-                                            <input type="hidden" class="form-control" name="formkey" value="<?=$token?>">
-                                            <button class="btn-one" type="submit" data-loading-text="envoi en cours...">
-                                                <span class="txt"> <i class="loarder"></i><i class="fas fa-circle-notch fa-spin pagi-icon"></i> Envoyer une demande</span>
-                                            </button>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </form>
+                            <h2>Contactez-nous</h2>
                         </div>
+                        <form id="contactForm"  class="default-form1" method="post" novalidate="novalidate">
+                            <div class="row">
+                                <div class="col-xl-6">
+                                    <div class="input-box">
+                                        <input type="text" name="nom" id="nom" placeholder="Nom & Prénom" required="" aria-required="true">
+                                    </div>
+                                </div>
+                                <div class="col-xl-6">
+                                    <div class="input-box">
+                                        <input type="tel" class="form-control style-input" id="phone" name="phone" maxlength="10" required>
+                                        <input type="hidden"  name="isoPhone" id="isoPhone" value="">
+                                        <input type="hidden"  name="dialPhone" id="dialPhone" value="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xl-12">
+                                    <div class="input-box">
+                                        <textarea name="message" id="message" rows="5" placeholder="Message"></textarea>
+                                    </div>
+
+                                    <div class="button-box">
+                                        <input type="hidden" class="form-control" name="formkey" value="<?=$token?>">
+                                        <button class="btn-one" type="submit" data-loading-text="envoi en cours...">
+                                            <span class="txt"> <i class="loarder"></i><i class="fas fa-circle-notch fa-spin pagi-icon"></i> Envoyer une demande</span>
+                                        </button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </form>
                     </div>
-
-
                 </div>
+
+
             </div>
         </div>
+    </div>
 </section>
 
 <?php

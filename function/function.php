@@ -3,6 +3,35 @@ $dateGmt = gmdate('Y-m-d H:i');
 // page active
 
 
+if(!function_exists('afficherDateFr')){
+    function afficherDateFr($date = null) {
+        // Si aucune date n'est fournie, on prend la date actuelle
+        if ($date === null) {
+            $date = date('Y-m-d');
+        }
+
+        // Convertir la date en timestamp
+        $timestamp = strtotime($date);
+
+        // Tableau des mois en français
+        $mois = [
+            1 => 'Janvier', 2 => 'Février', 3 => 'Mars', 4 => 'Avril',
+            5 => 'Mai', 6 => 'Juin', 7 => 'Juillet', 8 => 'Août',
+            9 => 'Septembre', 10 => 'Octobre', 11 => 'Novembre', 12 => 'Décembre'
+        ];
+
+        // Extraire les composants de la date
+        $jour = date('d', $timestamp);
+        $moisTexte = $mois[(int)date('m', $timestamp)];
+        $annee = date('Y', $timestamp);
+
+        // Retourner la date formatée
+        return "$jour $moisTexte $annee";
+    }
+}
+
+
+
 if(!function_exists('getIp')){
     function getIp(){
         if(!empty($_SERVER['HTTP_CLIENT_IP'])){
@@ -15,6 +44,10 @@ if(!function_exists('getIp')){
         return $ip;
     }
 }
+
+
+
+
 if(!function_exists('page_active')){
     function page_active2($page){
         $urlSlug = trim(utf8_decode(trim(substr($_SERVER["REQUEST_URI"], strlen(dirname($_SERVER["SCRIPT_NAME"]))))), "/");
