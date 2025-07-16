@@ -413,8 +413,17 @@ figcaption{
 
 
 
+.text-gris{
+    color: #757575;
+}
 
+.current{
+    color: #2cdd11 !important;
+}
 
+.current a{
+    color: #2cdd11 !important;
+}
 
 
 
@@ -424,8 +433,20 @@ figcaption{
     .version-mobile {
         display: block !important;
     }
-}
 
+    .single-blog-style1--blog-large.blog-details .text-holder .top-text .top {
+        padding-left: 0;
+    }
+
+    .single-blog-style1--blog-large.blog-details .text-holder {
+        padding: 7px 6px 0;
+    }
+
+
+
+
+
+}
 
 </style>
 
@@ -443,6 +464,10 @@ figcaption{
             <li class="nav-item">
                 <i class="fa fa-user"></i>
                 <a class="nav-link text-dark" href="https://locataire.cabinet-ccgim.com">Locataire</a>
+            </li>
+            <li class="nav-item <?= page_active('blog') ;?>">
+                <i class="fa fa-book"></i>
+                <a class="nav-link text-gris" href="<?=$domaine?>/blog">Nos offres</a>
             </li>
         </ul>
 
